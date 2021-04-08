@@ -1,6 +1,10 @@
 # 统计reconcile paper阅读
 
-This “double-descent” curve subsumes the textbookU-shaped bias–variance trade-off curve by showing how increas-ing model capacity beyond the point of interpolation results inimproved  performance.  We  provide  evidence  for  the  existenceand  ubiquity  of  double  descent  for  a  wide  spectrum  of  mod-els and datasets, and we posit a mechanism for its emergence.This  connection  between  the  performance  and  the  structure  ofmachine-learning models delineates the limits of classical analy-ses and has implications for both the theory and the practice ofmachine learning.
+This “double-descent” curve subsumes the textbookU-shaped bias–variance trade-off curve by showing how increas-ing model capacity beyond the point of interpolation results inimproved  performance.
+
+We  provide  evidence  for  the  existence and  ubiquity  of  double  descent  for  a  wide  spectrum  of  mod-els and datasets, and we posit a mechanism for its emergence.
+
+This  connection  between  the  performance  and  the  structure  of machine-learning models delineates the limits of classical analy-ses and has implications for both the theory and the practice of machine learning.
 
 经验风险Link:https://zhuanlan.zhihu.com/p/159189617
 
