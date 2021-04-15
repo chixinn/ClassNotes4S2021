@@ -98,7 +98,8 @@ contract AeroplaneChess {
                 newPosition = -newPosition;
                 players[id].direction = 1;
             } else if (uint(newPosition) > destination) {
-                newPosition = int(destination) * 2 - newPosition;
+                // newPosition = int(destination) * 2 - newPosition;
+                newPosition=newPosition%(int)(destination);
                 players[id].direction = -1;
             } else {
                 break;
