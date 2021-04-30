@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</header>
+
+<body>
+    <form>
+        <br> 标题：<input type="text" name="title_text">
+        <input class="form-submit" type="button" value="查询">
+    </form>
+    <div class="cardLayout" style="margin: 10px 0px">
+        <table width="100%" id="record2"></table>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("input:button").click(function() {
+                $.get('/process_get?title=' + $("input:text").val(), function(data) {
+                    $("#record2").empty();
+                    $("#record2").append('<tr class="cardLayout"><td>url</td><td>source_name</td>' +
+                        '<td>title</td><td>author</td><td>publish_date</td></tr>');
+                    for (let list of data) {
+                        let table = '<tr class="cardLayout"><td>';
+                        Object.values(list).forEach(element => {
+                            table += (element + '</td><td>');
+                        });
+                        $("#record2").append(table + '</td></tr>');
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
